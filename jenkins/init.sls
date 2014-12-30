@@ -34,7 +34,7 @@ jenkins_relocate_home:
 
 jenkins_update_defaults:
   cmd.run:
-    - name: sed -i 's/JENKINS_HOME=\/var\/lib\/jenkins/JENKINS_HOME=\/data\/jenkins_home/g'
+    - name: sed -i 's/JENKINS_HOME=\/var\/lib\/jenkins/JENKINS_HOME=\/data\/jenkins_home/g' /etc/default/jenkins
 
 jenkins_start_new_home:
   cmd.run:
