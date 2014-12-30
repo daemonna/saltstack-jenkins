@@ -1,3 +1,7 @@
+python-software-properties:
+  pkg:
+    - installed
+
 vim:
   pkg:
     - installed
