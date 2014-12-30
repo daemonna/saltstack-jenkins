@@ -1,4 +1,4 @@
 saltstack-jenkins
 =================
 
-SaltStack formulas for jenkins
+SaltStack formulas for Jenkins CI including tools for Yocto build.
