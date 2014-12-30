@@ -23,3 +23,19 @@ jenkins:
     - enable: True
     - watch:
       - pkg: jenkins
+
+jenkins_stop:
+  cmd.run:
+    - name: service jenkins stop
+
+jenkins_relocate_home:
+  cmd.run:
+    - name: mv /var/lib/jenkins/ /data/jenkins_home/
+
+jenkins_update_defaults:
+  cmd.run:
+    - name: sed -i 's/JENKINS_HOME=\/var\/lib\/jenkins/JENKINS_HOME=\/data\/jenkins_home/g'
+
+jenkins_start_new_home:
+  cmd.run:
+    - name: service jenkins start
