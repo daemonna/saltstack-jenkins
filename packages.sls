@@ -9,3 +9,11 @@ vim:
 openjdk-7-jre-headless:
   pkg:
     - installed
+
+git:
+  pkg:
+    - installed
+
+curl:
+  pkg:
+    - installed
